@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8rem 3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.44rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.44rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  font-size: 1.52rem;
+  color: hsl(229, 6%, 66%);
+  line-height: 160%;
+}
+
+.card-wrapper {
+  margin-top: 7.5rem;
+  width: clamp(30rem, calc(100%), 40rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.desktop-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px hsla(234, 50%, 35%, 0.1),
+    0 10px 20px hsla(234, 50%, 35%, 0.1);
+}
+
+.header {
+  height: 4px;
+  width: 100%;
+}
+
+.cyan-header {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.red-header {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.orange-header {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.blue-header {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.sub-card {
+  padding: 2.2rem 2.9rem;
+  width: 100%;
+}
+
+h3 {
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  font-size: 1.33rem;
+  color: hsl(229, 6%, 66%);
+  margin-top: 0.5rem;
+}
+
+img {
+  margin-top: 3.5rem;
+  margin-left: auto;
+  display: block;
+  width: 5.9rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 91%;
+    margin: 0 auto;
+    padding: 7.6rem;
+  }
+
+  h1 {
+    font-size: 3.65rem;
+  }
+
+  h2 {
+    font-size: 3.65rem;
+    margin-top: -0.5rem;
+  }
+
+  header p {
+    width: 60%;
+    text-align: center;
+  }
+
+  .card-wrapper {
+    flex-direction: row;
+    margin-top: 6.4rem;
+    width: 100%;
+  }
+
+  .desktop-wrapper {
+    width: unset;
+  }
+
+  .card {
+    width: 35rem;
+  }
+
+  .sub-card {
+    padding: 2.8rem 3.2rem 3rem 3.2rem;
+  }
+
+  p {
+    line-height: 2.5rem;
+  }
+
+  img {
+    max-height: 15rem;
+    width: auto;
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
